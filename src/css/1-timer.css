@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER / NAV ===== */
+.header {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+/* ===== TITLES ===== */
+.main-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.main-title-gradient {
+  font-weight: 700;
+}
+
+/* ===== TIMER ===== */
+#datetime-picker {
+  width: 220px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+button {
+  padding: 6px 16px;
+  font-size: 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.label {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* ===== SNACKBAR FORM ===== */
+.form {
+  max-width: 300px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin-top: 8px;
+}
+
+.form button {
+  width: 100%;
+  margin-left: 0;
+}
